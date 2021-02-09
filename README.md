@@ -1,4 +1,6 @@
 # Unofficial DeGIRO Python API
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faukjan%2Fdegiro.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Faukjan%2Fdegiro?ref=badge_shield)
+
 Very basic **unofficial** Python API for [DeGiro](https://www.degiro.nl). This API is only able to get details about your portfolio. It cannot be used for automatic trading. For a way more extensive Node.js API have a look at [pladarias](https://github.com/pladaria/degiro) work.
 
 :warning: DeGiro could change their API at any moment, if something is not working, please open an issue.
@@ -25,3 +27,7 @@ for row in portfolio['PRODUCT'].values():
     print('{:<20}\t{:5.1f}\t{:6.2f}\t{:7.2f}\t\t{:2.1f}%'.format(row['name'], row['size'], row['price'], subtot, alloc))
 print('Total: {:.2f}'.format(total))
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Faukjan%2Fdegiro.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Faukjan%2Fdegiro?ref=badge_large)
